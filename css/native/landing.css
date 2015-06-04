@@ -1,0 +1,202 @@
+/* Landing Page CSS */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #96E4FF;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    margin-top: 3%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 15px 0px 15px;
+}
+
+nav ul li a {
+    color: #FF74AA;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #F55091;
+}
+
+nav ul li i {
+    margin: 0px 10px 0px 10px;
+}
+
+.right {
+    float: right;
+    margin: 0px 2px 0px 2px;
+}
+
+/* Clouds */
+#welcome {
+    padding: 230px;
+    max-height: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.clouds_background {
+    overflow-x: hidden;
+}
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -25%;
+    }
+    100% {
+        margin-left: 140%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -25%;
+    }
+    100% {
+        margin-left: 140%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -25%;
+    }
+    100% {
+        margin-left: 140%;
+    }
+}
+
+#welcome .cloud {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#welcome .cloud.cloud-1 {
+    top: 20%;
+    left: -500px;
+    
+	-webkit-animation: animateCloud 90s linear infinite;
+	-moz-animation: animateCloud 90s linear infinite;
+	animation: animateCloud 90s linear infinite;
+	
+	-webkit-transform: scale(0.45);
+	-moz-transform: scale(0.45);
+	transform: scale(0.45);
+    
+    z-index: -5;
+}
+
+#welcome .cloud.cloud-2 {
+    top: 65%;
+    left: -30px;
+    
+    -webkit-animation: animateCloud 100s linear infinite;
+	-moz-animation: animateCloud 100s linear infinite;
+	animation: animateCloud 100s linear infinite;
+	
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	transform: scale(0.2);
+    
+    z-index: -4;
+}
+
+#welcome .cloud.cloud-3 {
+    -webkit-animation: animateCloud 75s linear infinite;
+	-moz-animation: animateCloud 75s linear infinite;
+	animation: animateCloud 75s linear infinite;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+    
+    z-index: -3;
+}
+
+/* Registration */
+.logo {
+    margin-top: -18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 40vw;
+    height: auto;
+}
+
+.row.info {
+    margin-top: -20%;
+    font-weight: 400;
+    color: #FF74AA;
+    text-align: center;
+}
+
+.btn {
+    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid #2ECC71;
+    color: #2ECC71;
+}
+
+.btn:hover {
+    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    background-color: #2ECC71;
+    color: #96E4FF;
+}
+
+.btn:active {
+    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    background-color: #2ECC71;
+    color: #96E4FF;
+}
+
+.mouse {
+  display: block;
+  height: 46px;
+  left: 50%;
+  margin: 10px 0 0 -13px;
+  position: absolute;
+  width: 26px;
+}
+
+.mouse span {
+  display: block;
+  font-size: 1.5em;
+  margin: 6px auto;
+}
