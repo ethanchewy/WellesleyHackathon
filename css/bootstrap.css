@@ -86,6 +86,12 @@ sub {
 img {
   border: 0;
 }
+/* Added image resize */
+img.resize{
+    width:540px; /* you can use % */
+    height: auto;
+}
+
 svg:not(:root) {
   overflow: hidden;
 }
