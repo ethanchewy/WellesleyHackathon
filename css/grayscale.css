@@ -366,7 +366,7 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-.btn {
+.btn2 {
     -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
@@ -377,7 +377,7 @@ body {
     color: #2ECC71;
 }
 
-.btn:hover {
+.btn2:hover {
     -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
@@ -386,7 +386,7 @@ body {
     color: #96E4FF;
 }
 
-.btn:active {
+.btn2:active {
     -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
