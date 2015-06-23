@@ -5,7 +5,10 @@ body {
     color: #fff;
     background-color: #000;
 }
-
+/*button */
+#firstbutton {
+    margin-bottom:20px;
+}
 html {
     width: 100%;
     height: 100%;
