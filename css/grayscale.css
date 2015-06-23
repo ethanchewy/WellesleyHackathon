@@ -371,3 +371,8 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+/*Scale this image*/
+img.resize{
+    width:540px; /* you can use % */
+    height: auto;
+}
