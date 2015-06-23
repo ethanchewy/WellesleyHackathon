@@ -374,8 +374,8 @@ body {
     font-weight: 700;
     font-size: 200%;
     background-color: transparent;
-    border: 2px solid #2ECC71;
-    color: #2ECC71;
+    border: 2px solid #B6B6B6;
+    color: #B6B6B6;
 }
 
 .btn2:hover {
@@ -383,8 +383,8 @@ body {
     -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    background-color: #2ECC71;
-    color: #96E4FF;
+    background-color: #B6B6B6;
+    color: #fff;
 }
 
 .btn2:active {
@@ -392,6 +392,6 @@ body {
     -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    background-color: #2ECC71;
-    color: #96E4FF;
+    background-color: #B6B6B6;
+    color: #fff;
 }
