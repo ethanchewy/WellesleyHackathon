@@ -372,6 +372,7 @@ body {
     -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     font-weight: 700;
+    font-size: 200%;
     background-color: transparent;
     border: 2px solid #2ECC71;
     color: #2ECC71;
