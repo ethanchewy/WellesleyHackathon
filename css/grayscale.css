@@ -3,6 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+img.resize{
+    width:540px; /* you can use % */
+    height: auto;
+}
 
 body {
     width: 100%;
@@ -372,7 +376,3 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 /*Scale this image*/
-img.resize{
-    width:540px; /* you can use % */
-    height: auto;
-}
