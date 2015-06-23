@@ -1,10 +1,3 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-
 body {
     width: 100%;
     height: 100%;
@@ -372,4 +365,32 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
-/*Scale this image*/
+
+.btn {
+    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid #2ECC71;
+    color: #2ECC71;
+}
+
+.btn:hover {
+    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    background-color: #2ECC71;
+    color: #96E4FF;
+}
+
+.btn:active {
+    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
+    background-color: #2ECC71;
+    color: #96E4FF;
+}
