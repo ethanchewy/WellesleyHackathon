@@ -4893,9 +4893,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #fff;
 }
 .label {
-  display: inline;
+  display: run-in;
   padding: .2em .6em .3em;
-  font-size: 75%;
+  font-size: 30%;
   font-weight: bold;
   line-height: 1;
   color: #fff;
