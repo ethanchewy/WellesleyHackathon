@@ -281,11 +281,11 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 #circle {
-    width: 125px;
-    height: 125px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px; 
+    width: 180px;
+    height: 180px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px; 
     background: #f56789;
 }
 .glyphicon-asterisk:before {
