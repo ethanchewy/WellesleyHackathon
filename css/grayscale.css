@@ -29,15 +29,41 @@ body {
     content:'';
     display:block;
     position:absolute;
-    top:-20px; /*should be set to -border-width x 2 */
-    left:30px;
-    width:0;
+    top:-17%; /*should be set to -border-width x 2 */
+    left:0%;
+    width:5%;
     height:0;
     border-color: transparent transparent black transparent; /*border color should be same as div div background color*/
     border-style: solid;
-    border-width: 10px;
+    border-width: 22px;
 }
 
+#menu1 {
+    width:100%;
+    min-height:; /*min height of DIV should be set to at least 2x the width of the arrow*/
+    background: black;
+    color:white;
+    padding:5px;
+    position:relative;
+    word-wrap:break-word;
+    -moz-border-radius:5px; /*add some nice CSS3 round corners*/
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    margin-bottom:2em;
+}
+
+#menu1:after{ /*arrow added to home DIV*/
+    content:'';
+    display:block;
+    position:absolute;
+    top:-8%; /*should be set to -border-width x 2 */
+    left:8%;
+    width:5%;
+    height:0;
+    border-color: transparent transparent black transparent; /*border color should be same as div div background color*/
+    border-style: solid;
+    border-width: 22px;
+}
 
 
 
