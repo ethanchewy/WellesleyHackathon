@@ -30,7 +30,7 @@ body {
     display:block;
     position:absolute;
     top:-17%; /*should be set to -border-width x 2 */
-    left:0%;
+    left:13.7%%;
     width:5%;
     height:0;
     border-color: transparent transparent black transparent; /*border color should be same as div div background color*/
@@ -57,7 +57,7 @@ body {
     display:block;
     position:absolute;
     top:-8%; /*should be set to -border-width x 2 */
-    left:8%;
+    left:79.7%;
     width:5%;
     height:0;
     border-color: transparent transparent black transparent; /*border color should be same as div div background color*/
