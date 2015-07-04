@@ -455,8 +455,8 @@ body {
     -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    background-color: #B6B6B6;
-    color: #fff;
+    /*background-color: #B6B6B6;
+    color: transparent; */
 }
 
 .btn2:active {
@@ -464,6 +464,6 @@ body {
     -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
     -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    background-color: #B6B6B6;
-    color: #fff;
+    /*background-color: #B6B6B6;
+    color: transparent; */
 }
