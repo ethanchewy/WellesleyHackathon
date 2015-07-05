@@ -1,8 +1,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #000;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #cccccc;
 }
 /* table */
@@ -425,11 +424,34 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    /*padding: 50px 0;*/
+    background-color: #000;
+
 }
 
 footer p {
     margin: 0;
+    color:#fff;
+    float:left;
+}
+
+/* social media stuff */
+.social {
+    color: white;
+    font-size: 20px;
+    background-color: #000;
+    float:right;
+}
+
+.socialicon {
+    font-size:23px;
+    background-color:#000;
+}
+.socialbar{
+    background-color:#000;
+}
+.infobottom {
+    background-color:#000;
 }
 
 ::-moz-selection {
