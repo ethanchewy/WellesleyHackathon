@@ -5,6 +5,17 @@ body {
     color: #000;
     background-color: #cccccc;
 }
+/* table */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  word-wrap: break-word;
+}
 /*button */
 #firstbutton {
     margin-bottom:20px;
