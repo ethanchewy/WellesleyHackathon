@@ -1,9 +1,19 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #000;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #cccccc;
+}
+/* table */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  word-wrap: break-word;
 }
 /*button */
 #firstbutton {
@@ -40,22 +50,6 @@ body {
     border-width: 24px;
 }
 
-.rounded-shadow{
-    position: relative;
-    max-width: 20em;
-    margin: 1em;
-    padding: 1em;
-    display: inline-block;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #336699;
-    -moz-box-shadow: 5px 5px 0 0 #225588;
-    -webkit-box-shadow: 5px 5px 0 0 #225588;
-    box-shadow: 5px 5px 0 0 #225588;
-    color: #fff;
-}
-
 #menu1 {
     width:100%;
     min-height:; /*min height of DIV should be set to at least 2x the width of the arrow*/
@@ -89,6 +83,8 @@ body {
 #overview {
     /*background-color: #fff; */
 }
+
+
 
 
 #hometab{
@@ -227,6 +223,60 @@ a:focus {
     }
 }
 
+.rounded-shadow{
+    position: relative;
+    max-width: 30em;
+    margin: 1em;
+    padding: 1em;
+    display: inline-block;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #336699;
+    -moz-box-shadow: 5px 5px 0 0 #225588;
+    -webkit-box-shadow: 5px 5px 0 0 #225588;
+    box-shadow: 5px 5px 0 0 #225588;
+    color: #fff;
+}
+
+.circle {
+    top:20px;
+    left: -52px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    border: 5px solid;
+    background: #000;
+    border-color: #fff;
+    position: absolute;
+}
+
+#schedule {
+    background-color: #b0b0b0;   
+}
+
+.schedule-block {
+    text-align: center;
+    border: solid #fff;
+    margin: 20%;
+    width: 50%;
+    background-color: #c0c0c0;   
+}
+
+.schedule-element  {
+    list-style: none;
+    border-bottom: solid #fff;
+    position: relative;
+}
+
+.time {
+    width: 20%;
+    text-align: left; 
+    margin-top: 12%;
+    float: left;
+    color: #fff;
+}
+
 .intro {
     display: table;
     width: 100%;
@@ -360,44 +410,6 @@ a:focus {
     -o-background-size: cover;
 }
 
-.circle {
-    top:20px;
-    left: -52px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%; 
-    border: 5px solid;
-    background: #000;
-    border-color: #fff;
-    position: absolute;
-}
-
-#schedule {
-    background-color: #b0b0b0;   
-}
-
-.schedule-block {
-    text-align: center;
-    border: solid #fff;
-    margin: 20%;
-    width: 40%;
-    background-color: #c0c0c0;   
-}
-
-.schedule-element  {
-    list-style: none;
-    border-bottom: solid #fff;
-    position: relative;
-}
-
-.time {
-    width: 5%;
-    text-align: left; 
-    margin-top: 12%;
-    float: left;
-    color: #fff;
-}
-
 #map {
     width: 100%;
     height: 200px;
@@ -466,11 +478,34 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    /*padding: 50px 0;*/
+    background-color: #000;
+
 }
 
 footer p {
     margin: 0;
+    color:#fff;
+    float:left;
+}
+
+/* social media stuff */
+.social {
+    color: white;
+    font-size: 20px;
+    background-color: #000;
+    float:right;
+}
+
+.socialicon {
+    font-size:23px;
+    background-color:#000;
+}
+.socialbar{
+    background-color:#000;
+}
+.infobottom {
+    background-color:#000;
 }
 
 ::-moz-selection {
