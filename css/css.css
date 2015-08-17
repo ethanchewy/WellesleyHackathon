@@ -221,8 +221,8 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        border-bottom: 0px solid rgba(255,255,255,.3);
+        background: #64B5F6;
     }
 }
 
@@ -391,8 +391,8 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    /*border: 1px solid #42dca3; */
+    color: white;
     background-color: transparent;
 }
 
@@ -400,8 +400,8 @@ a:focus {
 .btn-default:focus {
     /*border: 1px solid #42dca3; */
     outline: 0;
-    color: #000;
-    background-color: #42dca3;
+    color: white;
+    background-color: #C62828;
 }
 
 ul.banner-social-buttons {
@@ -483,7 +483,9 @@ body {
 
 .btn2 {
     background-color:#E53935;
-    font-size:24px;
-    border:0;
+    font-size:35px;
+    border: 2.5px solid white; 
+    -moz-border-radius: 15px; 
+    -webkit-border-radius: 15px; 
 }
 
