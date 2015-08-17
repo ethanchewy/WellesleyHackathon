@@ -398,7 +398,7 @@ a:focus {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    /*border: 1px solid #42dca3; */
     outline: 0;
     color: #000;
     background-color: #42dca3;
@@ -482,31 +482,8 @@ body {
 }
 
 .btn2 {
-    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    font-weight: 700;
-    font-size: 200%;
-    background-color: transparent;
-    border: 2px solid #B6B6B6;
-    color: #B6B6B6;
+    background-color:#E53935;
+    font-size:24px;
+    border:0;
 }
 
-.btn2:hover {
-    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    background-color: #B6B6B6;
-    color: #fff; 
-}
-
-.btn2:active {
-    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    background-color: #B6B6B6;
-    color: #fff; 
-}
