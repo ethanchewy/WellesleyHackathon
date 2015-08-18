@@ -1,11 +1,20 @@
 //get value of the intro so that we can use it for our collapsible navbar
 var introheight =  $('.intro').height();
+var invisiblenavbar = $('.navbar').height();
 
-
+//invisible for intro screen 3/4
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > invisiblenavbar) {
+        $(".navbar-fixed-top").addClass("transparentbar");
+    } else {
+        $(".navbar-fixed-top").removeClass("transparentbar");
+    }
+});
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > introheight) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $(".navbar-fixed-top").removeClass("transparentbar");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
