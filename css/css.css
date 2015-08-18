@@ -2,7 +2,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #cccccc;
+    background-color: #9E9E9E; 
 }
 /* table */
 table, th, td {
@@ -81,7 +81,7 @@ table, th, td {
 
 /* Sections CSS */
 #overview {
-    /*background-color: #fff; */
+    background-color: #9E9E9E; 
 }
 
 

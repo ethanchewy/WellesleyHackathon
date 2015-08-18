@@ -12,7 +12,7 @@ $(window).scroll(function() {
 });
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > introheight) {
+    if ($(".navbar").offset().top >= introheight) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".navbar-fixed-top").removeClass("transparentbar");
     } else {
