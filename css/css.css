@@ -33,6 +33,7 @@ table, th, td {
     -webkit-border-radius:5px;
     border-radius:5px;
     margin-bottom:2em;
+    background-color: #757575;
 }
 
 #home:after{ /*arrow added to home DIV*/
@@ -45,7 +46,7 @@ table, th, td {
     float: left;
     width:0;
     height:0;
-    border-color: transparent transparent black transparent; /*border color should be same as div div background color*/
+    border-color: transparent transparent #757575 transparent; /*border color should be same as div div background color*/
     border-style: solid;
     border-width: 24px;
 }
@@ -53,7 +54,7 @@ table, th, td {
 #menu1 {
     width:100%;
     min-height:; /*min height of DIV should be set to at least 2x the width of the arrow*/
-    background: black;
+    background: #757575;
     color:white;
     padding:5px;
     position:relative;
@@ -74,7 +75,7 @@ table, th, td {
     margin-left: 79.3%;
     float: left;
     height:0;
-    border-color: transparent transparent black transparent; /*border color should be same as div div background color*/
+    border-color: transparent transparent #757575 transparent; /*border color should be same as div div background color*/
     border-style: solid;
     border-width: 24px;
 }
@@ -509,3 +510,56 @@ body {
     -webkit-border-radius: 15px; 
 }
 
+.circle {
+margin-left: auto;
+margin-right: auto;
+border-radius: 50%;
+width: 25%;
+position: relative;
+background-color:#9E9E9E;
+}
+
+.circle-border {
+border: 1px solid #9E9E9E;
+}
+
+.circle-solid{
+background-color: #9E9E9E;
+}
+
+.circle:before {
+content: "";
+display: block;
+padding-top: 100%;
+}
+
+.circle-inner {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+text-align: center;
+
+}
+
+.score-text {
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+height: 1em;
+line-height: 1em;
+color:white;
+
+}
+
+#FAQ {
+    background-color:#00BFA5;
+}
+
+#speakers {
+    background-color:#C0CA33;
+}
