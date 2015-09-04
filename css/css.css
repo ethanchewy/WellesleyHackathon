@@ -278,9 +278,15 @@ a:focus {
         font-size: 500%;
     }
 
+    
+
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
+}
+
+.navbar-custom{
+        background-color:#64B5F6 !important;
 }
 
 .btn-circle {
