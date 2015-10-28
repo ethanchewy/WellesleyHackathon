@@ -15,6 +15,10 @@ table, th, td {
   font-size: 1.2em;
   word-wrap: break-word;
 }
+.navbar {
+    background-color:#64B5F6 !important;
+}
+
 /*button */
 #firstbutton {
     margin-bottom:20px;
