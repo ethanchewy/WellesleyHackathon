@@ -17,6 +17,8 @@ table, th, td {
 }
 .navbar {
     background-color:#64B5F6 !important;
+    border-bottom:1px !important;
+    border-color:white !important;
 }
 
 /*button */
