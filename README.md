@@ -1,1 +1,1 @@
-Metrowest First Hackathon! Contact us at welleseyhacks@gmail.com with any questions!
+Metrowest First Hackathon! Contact us at wellesleyhacks@gmail.com with any questions!
