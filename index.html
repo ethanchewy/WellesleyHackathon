@@ -15,7 +15,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href ="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -33,22 +33,15 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
+        <!--
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <!--<a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
-                </a> -->
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="container">
+            
+
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from overview link when scrolled up past overview section -->
+                    
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -67,9 +60,30 @@
                     
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+
         </div>
-        <!-- /.container -->
+
+    </nav>
+-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#overview">Overview</a></li>
+            <li class="active"><a href="#FAQ">FAQ</a></li>
+            <li class="active"><a href="#contributers">Contributors</a></li>
+            <li class="active"><a href="#about">About Us</a></li>
+            
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- Intro Header -->
@@ -78,14 +92,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <img style="height:auto; width:auto; max-width:100%; max-height:100%;" src="img/wellesleylogo.png">
+                        <img style="height:auto; width:auto; max-width:100%; max-height:100%;" class="wellesleylogo"src="img/wellesleylogo.png">
                         <h1 class="brand-heading">WellesleyHacks</h1>
-                        <p class="intro-text">March 19 | Wellesley High School | Wellesley, Massachusetts</p>
-                        <a href="http://eepurl.com/brirQr" target="_blank" class="btn2">Pre-Register</a>
+                        <i><p class="intro-text">April 1, 2017 | Wellesley High School | Wellesley, MA</p></i>
+                        <a class="btn btn-default btn2" href="http://eepurl.com/brirQr" role="button">Pre-Register</a>
                         <br>
                         <a href="#overview" class="btn btn-circle page-scroll" id="firstbutton">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
+                        <div class="alert alert-danger" role="alert">
+                          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                          <span class="sr-only">Error:</span>
+                          Please Excuse our Appearance. We are updating our site!
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,31 +113,34 @@
 
     <!-- overview Section -->
     <section id="overview" class="container content-section text-center">
+        <h1 class="text-center" style="color:white;">What is WellesleyHacks?</h1><br>
         <div class="container">
           <ul class="nav nav-tabs">
-            <li class="active" id="hometab"><a data-toggle="tab" href="#home">
+              <li class="active" id="leftside" style="width:33%; float:left"><a data-toggle="tab" href="#home">
                 <span class="glyphicon glyphicon-info-sign"></span>
-            </a></li>
-            
-            <li id ="menu1tab"><a data-toggle="tab" href="#menu1">
+              </a></li>
+               
+              <li id="rightside" style="margin-left: 33%; width:33%;"><a data-toggle="tab" href="#menu1">
                 <span class="glyphicon glyphicon-user"></span>
-            </a></li>
-          </ul>
+              </a></li>
+            </ul>
         
           <div class="tab-content">
             <br>
             <div id="home" class="tab-pane fade in active">
-              <h3>About Us</h3>
-              <p>WellesleyHacks will bring together more than 400 high schoolers who have a passion for learning and innovating. 
+              
+              <h3><br>About Us</h3>
+              <p>WellesleyHacks will bring together more than 300 high schoolers and middle schoolers who have a passion for learning and innovating. 
               These students would form groups, generate ideas, experiment with ideas, and finally deploy their idea as an application. 
               This 10 hour event showcases inspiring speakers, engaging workshops, and prominent judges. </p>
             </div>
             <div id="menu1" class="tab-pane fade">
-              <h3>What We will do <!-- change soon -->/h3>
-              <p></p>
+              <h3><br>What We will do <!-- change soon --></h3>
+              <p>We welcome any creative mind regardless of whether you are a hacker, maker, or designer. <br>
+              You can make anything that pertains to one or more of these categories: </p>
                 <div class="row">
                         <!--<div class="center-block">-->
-                            <span class="glyphicon glyphicon-phone" style="padding-top: 45px; color: #fff;">
+                            <span class="glyphicon glyphicon-phone" style="padding-top: ; color: #fff;">
     				<span class="label">Mobile Apps</span>
     			</span>
                         <!--</div>-->
@@ -133,18 +155,18 @@
             <!--<br style="padding-bottom: 50px;"> </br>-->
             <div class="row"> 
                     <div class="center-block">
-                        <span class="glyphicon glyphicon-hdd" style="padding-top: 45px; color: #fff;">
+                        <span class="glyphicon glyphicon-hdd" style="padding-top: 45px; padding-bottom:45px;color: #fff;">
                             <span class="label">Hardware</span>
                         </span>
                     </div>
             </div>
-            <div class="row"> 
+            <!--<div class="row"> 
                     <div class="center-block">
-                        <span class="glyphicon glyphicon-cog" style="padding-top: 45px; color: #fff;">
+                        <span class="glyphicon glyphicon-cog" id= "hackicon"style="padding-top: 45px; padding-bottom: 45px; color: #fff;">
                             <span class="label">Hack</span>
                         </span>  
                     </div>
-            </div>  
+            </div> --> 
           </div>
         </div>
         
@@ -190,49 +212,191 @@
         -->
     </section>
 
-    <!-- FAQ Section -->
+    
+    <!-- Scheudle Section 
+    **Will make interactive later w/ popout event info **-->
+    <section id="schedule" class="content-section text-center">
+        <h1> Saturday, April 1</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <th class="time">Time</th>
+                    <th class="event">Event</th>
+                    <th class="loc">Location</th>
+                </tr>
+                <tr>
+                    <td>8:00 AM - 9:00 AM</td>
+                    <td>Breakfast Social</td>
+                    <td>Cafeteria</td>
+                </tr>
+                <tr>
+                    <td>9:00 AM - 10:30 AM</td>
+                    <td>Opening Ceremony</td>
+                    <td>Auditorium</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM - 11:00 AM</td>
+                    <td>Form Teams/Start Hacking!</td>
+                    <td>Main Floor</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM - 11:30 AM</td>
+                    <td>Speaker #1</td>
+                    <td>Auditorium</td>
+                </tr>
+                <tr>
+                    <td>11:30 AM - 12:00 PM</td>
+                    <td>Lunch!</td>
+                    <td>Cafeteria</td>
+                </tr>
+                <tr>
+                    <td>12:00 AM - 12:30 AM</td>
+                    <td>Speaker #2</td>
+                    <td>Library</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM - 1:00 PM</td>
+                    <td>Speaker #3</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM- 1:30 PM</td>
+                    <td>Speaker #4</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>1:30 PM - 2:00 PM</td>
+                    <td>Speaker #5</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM - 2:30 PM</td>
+                    <td>Speaker #6</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>2:30 PM - 3:30 PM</td>
+                    <td>Snacktime</td>
+                    <td>Cafeteria/Auditorium</td>
+                </tr>
+                <tr>
+                    <td>3:30 PM - 6:30 PM</td>
+                    <td>Continue Hacking!!</td>
+                    <td>Main Floor</td>
+                </tr>
+                <tr>
+                    <td>6:30 PM - 6:45 PM</td>
+                    <td>Submit Hack</td>
+                    <td>Main Floor</td>
+                </tr>
+                <tr>
+                    <td>6:45 PM - 8:00 PM</td>
+                    <td>Presentations & Judging</td>
+                    <td>Auditorium</td>
+                </tr>
+
+            </tbody>
+        </table>
+    
+    </section>
+
+<!-- FAQ Section -->
     <section id="FAQ" class="content-section text-center">
         <div class="FAQ-section">
               <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <div id="circle" class="center-block text-center">
-                        <div class="col-lg-8 col-xs-4 text-center"style="padding-top: 40%; padding-left: 30%;">
-                            <h2>FAQ</h2>
-                        </div>
+                    <div class="circle circle-border">
+                         <div class="circle-inner">
+                             <h2 class="score-text">
+                                FAQ
+                              </h2>
+                         </div>
                     </div>
-                        <p>You can FAQ Grayscale for free on the preview page at Start Bootstrap.</p>
               </div>
         </div>
+        <!-- Seperate the circle from the other text -->
+        <br>
         <div class="container">
-        	<div class="row">
-                	<div class="col-lg-4 col-xs-8">
-                    		<div class="well well-md"><h3>Who should come to WellesleyHacks?</h2>here is the answer to question 1</div>
-                	</div>
-			<div class="col-lg-4 col-xs-8">
-				<div class="well well-md"><h3>How are teams formed?</h3>here is the answer to question 2</div>
-                	</div>
-                	<div class="col-lg-4 col-xs-8">
-                    		<div class="well well-md"><h3>Will there be food?</h3>here is the answer to question 3</div>
-                	</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-xs-8">
-				<div class="well well-md"><h3>What should I bring?</h3>here is the answer to question 4</div>
-                	</div>
-                	<div class="col-md-3">
-                    		<div class="well well-sm"><h3>question 5?</h2>here is the answer to question 5</div>
-                	</div>
-		</div>	
-        </div>		
+            <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="well well-md"><h4>Who can come to WellesleyHacks?</h4>Any Highschooler. We welcome highschool hackers of all skill levels!</div>
+                    </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="well well-md"><h4>How are teams formed?</h4>2 months before the hackathon, there will be a Facebook group created and you can find team members there. There will also be a breakfast in the morning and you can create teams there!</div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                <div class="well well-md"><h4>Will there be food?</h4>Yes! Breakfast, lunch, dinner, and a lot of yummy snacks.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="well well-md"><h4>What should I bring?</h4>You should bring a laptop and wear comfortable clothing.</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="well well-sm"><h4>Is this Event Free?</h4>Yes!</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="well well-md"><h4>How many team members can I have?</h4>4. You can also hack solo but hacking with a team is always more fun!</div>
+                    </div>
+        </div>  
+         <div class="row">
+            
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="well well-sm"><h4>Travel Reimbursements?</h4>As of now, there will be none.</div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="well well-sm"><h4>What about Hardware?</h4>We are trying to get some hardware. Most likely there will be raspberry pis provided.</div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="well well-sm"><h4>Can I start working on my hack before the event?</h4>No. If you are really itching to get started, feel free to familiarize yourself with the programming languages, hardward, and/or frameworks you plan to use.</div>
+                    </div>
+
+        </div>
+
+        </div>  
+        <br><br><br>    
+        
     </section>
     
-    
+    <section id="sponsors">
+        <div class="container text-center">
+            <br><br><br>
+            <h2>Sponsors</h2>
+            <a href="https://www.wellesleyeducationfoundation.org/">
+                <img src="img/wef.png"></img>
+            </a>
+            <a href="ttp://batec.org/">
+                <img src="img/Batec.png"></img>
+            </a>
+            <a href="https://lob.com/">
+                <img src="img/LobLogo.png"></img>
+            </a>
+            <a href="http://launchsummer.org/">
+                <img src="img/LaunchLogo.png"></img>
+            </a>
+            <br><br><br>
+            <a class="btn btn-default btn2" href="sponsorship.pdf" role="button">Interested in Sponsoring?</a>
 
+        </div>
+    </section>-
+
+    
+    <br><br><br>
+
+    <section id="speakers">
+        <div class="container text-center">
+            <br><br><br>
+            <h1>Speakers</h1>
+            <h1 style="color:white;">TBA!</h1>
+        </div>
+    </section>
     <!-- contributers Section -->
     <section id="contributers" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>contributers Start Bootstrap</h2>
+                <!--<h2>contributers Start Bootstrap</h2>
                 <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
                 <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
                 </p>
@@ -246,7 +410,9 @@
                     <li>
                         <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
                     </li>
+
                 </ul>
+            -->
             </div>
         </div>
     </section>
@@ -255,11 +421,22 @@
     <div id="map"></div>
 
     <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2014</p>
+    <section>
+        <div class="socialbar">
+            
+            <a class="socialicon" href="http://www.facebook.com/WellesleyHacks">
+                <i class="fa fa-facebook-square fa-fw"></i>
+            </a>
+            <a class="socialicon" href="https://twitter.com/WellesleyHacks" s>
+                <i class="fa fa-twitter fa-fw"></i>
+            </a>
+            <a class="socialicon" href="mailto:wellesleyhacks@gmail.com">
+                <i class="fa fa-envelope fa-fw"></i>
+            </a>
+
+            <p class="social">&nbsp; &nbsp; &nbsp;Copyright &copy; WellesleyHacks 2016-2017 </p>
         </div>
-    </footer>
+    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -274,7 +451,7 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/js.js"></script>
 
 </body>
 

@@ -1,15 +1,31 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #000;
-    background-color: #cccccc;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #9E9E9E; 
 }
+/* table */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  word-wrap: break-word;
+}
+.navbar {
+    background-color:#64B5F6 !important;
+    border-bottom:1px !important;
+    border-color:white !important;
+}
+
 /*button */
 #firstbutton {
     margin-bottom:20px;
 }
-
+/* icon */
 /* Tabs Arrow pointed out */
 #home {
     width:100%;
@@ -23,25 +39,28 @@ body {
     -webkit-border-radius:5px;
     border-radius:5px;
     margin-bottom:2em;
+    background-color: #757575;
 }
 
 #home:after{ /*arrow added to home DIV*/
     content:'';
     display:block;
     position:absolute;
-    top:-17%; /*should be set to -border-width x 2 */
-    left:0%;
-    width:5%;
+    top:-44px; /*should be set to -border-width x 2 */
+    /*left:13.7%%; */
+    margin-left: 13.3%;
+    float: left;
+    width:0;
     height:0;
-    border-color: transparent transparent black transparent; /*border color should be same as div div background color*/
+    border-color: transparent transparent #757575 transparent; /*border color should be same as div div background color*/
     border-style: solid;
-    border-width: 22px;
+    border-width: 24px;
 }
 
 #menu1 {
     width:100%;
     min-height:; /*min height of DIV should be set to at least 2x the width of the arrow*/
-    background: black;
+    background: #757575;
     color:white;
     padding:5px;
     position:relative;
@@ -56,16 +75,21 @@ body {
     content:'';
     display:block;
     position:absolute;
-    top:-8%; /*should be set to -border-width x 2 */
-    left:8%;
-    width:5%;
+    top:-44px;/*should be set to -border-width x 2 */
+    /*left:79.7%; */
+    width:0;
+    margin-left: 79.3%;
+    float: left;
     height:0;
-    border-color: transparent transparent black transparent; /*border color should be same as div div background color*/
+    border-color: transparent transparent #757575 transparent; /*border color should be same as div div background color*/
     border-style: solid;
-    border-width: 22px;
+    border-width: 24px;
 }
 
-
+/* Sections CSS */
+#overview {
+    background-color: #9E9E9E; 
+}
 
 
 
@@ -77,6 +101,9 @@ body {
 
 }
 
+.wellesleylogo{
+    max-width: 92% !important; 
+}
 
 html {
     width: 100%;
@@ -90,7 +117,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -188,6 +215,20 @@ a:focus {
     color: #fff;
 }
 
+ .transparentbar{
+    font-size:0px;
+    color:transparent;
+    opacity:0;
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    /*background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+*/
+}
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -201,8 +242,9 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        border-bottom: 0px solid rgba(255,255,255,.3);
+        background: #64B5F6;
+
     }
 }
 
@@ -214,7 +256,7 @@ a:focus {
     text-align: center;
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll; */
-    background-color: #FFC107;
+    background-color: #90CAF9;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -244,9 +286,17 @@ a:focus {
         font-size: 500%;
     }
 
+    
+
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
+
+
+}
+
+.navbar-custom{
+        background-color:#64B5F6 !important;
 }
 
 .btn-circle {
@@ -371,17 +421,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    /*border: 1px solid #42dca3; */
+    color: white;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    /*border: 1px solid #42dca3; */
     outline: 0;
-    color: #000;
-    background-color: #42dca3;
+    color: white;
+    background-color: #C62828;
 }
 
 ul.banner-social-buttons {
@@ -407,11 +457,34 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    /*padding: 50px 0;*/
+    background-color: #000;
+
 }
 
 footer p {
     margin: 0;
+    color:#fff;
+    float:left;
+}
+
+/* social media stuff */
+.social {
+    color: white;
+    font-size: 20px;
+    background-color: #000;
+    float:right;
+}
+
+.socialicon {
+    font-size:23px;
+    background-color:#000;
+}
+.socialbar{
+    background-color:#000;
+}
+.infobottom {
+    background-color:#000;
 }
 
 ::-moz-selection {
@@ -439,31 +512,63 @@ body {
 }
 
 .btn2 {
-    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    font-weight: 700;
-    font-size: 200%;
-    background-color: transparent;
-    border: 2px solid #B6B6B6;
-    color: #B6B6B6;
+    background-color:#E53935;
+    font-size:35px;
+    border: 2.5px solid white; 
+    -moz-border-radius: 15px; 
+    -webkit-border-radius: 15px; 
 }
 
-.btn2:hover {
-    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    background-color: #B6B6B6;
-    color: #fff;
+.circle {
+margin-left: auto;
+margin-right: auto;
+border-radius: 50%;
+width: 25%;
+position: relative;
+background-color:#9E9E9E;
 }
 
-.btn2:active {
-    -webkit-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -moz-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -o-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    -ms-transition: background-color .4s linear, border-color .4s linear, color .4s linear;
-    background-color: #B6B6B6;
-    color: #fff;
+.circle-border {
+border: 1px solid #9E9E9E;
+}
+
+.circle-solid{
+background-color: #9E9E9E;
+}
+
+.circle:before {
+content: "";
+display: block;
+padding-top: 100%;
+}
+
+.circle-inner {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+text-align: center;
+
+}
+
+.score-text {
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+height: 1em;
+line-height: 1em;
+color:white;
+
+}
+
+#FAQ {
+    background-color:#00BFA5;
+}
+
+#speakers {
+    background-color:#C0CA33;
 }

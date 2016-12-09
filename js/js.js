@@ -1,13 +1,20 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+//get value of the intro so that we can use it for our collapsible navbar
+var introheight =  $('.intro').height();
+var invisiblenavbar = $('.navbar').height();
 
+//invisible for intro screen 3/4
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > invisiblenavbar) {
+        $(".navbar-fixed-top").addClass("transparentbar");
+    } else {
+        $(".navbar-fixed-top").removeClass("transparentbar");
+    }
+});
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
+    if ($(".navbar").offset().top >= introheight) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $(".navbar-fixed-top").removeClass("transparentbar");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
@@ -33,15 +40,18 @@ $('.navbar-collapse ul li a').click(function() {
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 
+
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    
+
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(42.303259, -71.279774), // Wellesely, MA
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
